@@ -1,0 +1,163 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient( #9426fa ,#495af1, #1bf9f2 );
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-links a { font-size: small;
+  text-decoration: none;
+  color: #ffffffcc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white; font-weight: 500;
+}
+
+.auth-buttons button {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.signup {
+  background-color: #b364fd;
+  color: #fff;
+}
+
+.signup:hover {
+  background: linear-gradient(to right, #678c86, #03665c);
+}
+
+.login {
+  background-color: #fff;}
+
+.login:hover {
+  background-color: #b364fd; color: white;
+}
+
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero h1 {
+  font-size: 4rem; /* Reduced base font size */
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  display: block;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #fff;
+  color: #0e0e0f;
+}
+
+.primary-btn:hover {
+  background-color: #c5fbf7;
+}
+
+.secondary-btn {
+  background: linear-gradient(to right, #678c86, #03665c);
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(to right, #588981, #17756c);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem; /* Reduced padding for smaller screens */
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+
+    font-size: 2.8rem;
+  }
+}
