@@ -1,0 +1,474 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.btn {
+    background-color: #3377FF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2566db;
+}
+
+/* Header */
+header {
+    background-color: rgba(6, 170, 240, 0.8);
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  color:white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0e0e0e; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(45deg, #f7f8f8,black, #d8f7f4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f5f7fa;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/ffffff/3377FF?text=Find+Your+Perfect+Ride') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Featured Cars */
+.featured-cars {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.featured-cars h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.car-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.car-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Services Overview */
+.services-overview {
+    padding: 100px 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services-overview h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #3377FF;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 20px;
+    color: #3377FF;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* About Page */
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/ffffff/3377FF?text=About+Us') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+}
+
+.about-content {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.our-team {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.our-team h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Services Page */
+.services-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/ffffff/3377FF?text=Our+Services') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services-hero-content h1 {
+    font-size: 60px;
+}
+
+.services-list {
+    padding: 100px 50px;
+}
+
+.service-item {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-item img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.service-item-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3377FF;
+}
+
+/* Login/Signup Page */
+.login-signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.form-toggle button {
+    background: none;
+    border: none;
+    color: #333333;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-toggle button.active {
+    color: #3377FF;
+}
+
+.form-toggle button.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3377FF;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.auth-form h2 {
+    margin-bottom: 30px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 5px;
+}
+
+/* Contact Page */
+.contact-page-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-page {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.contact-form-container {
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        display: none; /* Simple responsive nav for now */
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .featured-cars,
+    .services-overview,
+    .testimonials,
+    .about-content,
+    .our-team,
+    .services-list,
+    .contact-page {
+        padding: 50px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .service-item {
+        flex-direction: column !important;
+        padding: 30px;
+    }
+
+    .service-item img {
+        width: 100%;
+    }
+}
