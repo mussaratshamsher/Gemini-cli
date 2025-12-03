@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   url: 'https://mussaratshamsher.github.io',
-  baseUrl: '/',
+  baseUrl: '/Gemini-cli/06-AI-Book/',
 
   organizationName: 'mussaratshamsher',
-  projectName: 'Gemini-AI-Book',
+  projectName: 'Gemini-cli',
 
   onBrokenLinks: 'throw',
 
