@@ -48,7 +48,7 @@ gemini mcp add --transport http figma https://mcp.figma.com/mcp --header "Author
 4- Save this link - you'll need it in the next step
 
 Example link format:
-https://www.figma.com/design/56zJj55NlGsFbHA2gJNgWr/assignment-1?node-id=1-1133&t=K2XK9UNG41wOcI3G-4
+https://www.figma.com/design/56zJj55NsFbHA2gJNgWr/assignment-1?node-id=1-13&t=K2XK941wOcI3G-4
 
 ## Generate Code from Figma Design
 ### For React Components:

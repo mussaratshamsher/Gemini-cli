@@ -1,0 +1,171 @@
+/**
+ * HERO SECTION (Ultra Premium Version)
+ * ======================================
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+/* Animated gradient overlay */
+.heroBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(60deg, #7c4dff, #00e5ff, #ff5c8d);
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  animation: aurora 12s linear infinite;
+}
+
+/* Floating glowing orbs */
+.heroBanner::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #7c4dff 0%, transparent 70%);
+  top: -200px;
+  right: -150px;
+  opacity: 0.6;
+  filter: blur(80px);
+}
+
+@keyframes aurora {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+
+/**
+ * GLASS HERO CARD
+ * ==========================
+ */
+
+.heroCard {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headings inside hero */
+.heroCard h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ffffff, #a98cff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroCard p {
+  color: rgba(255,255,255,0.85);
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+
+/**
+ * BUTTON CONTAINER
+ * ==========================
+ */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.2rem;
+}
+
+
+/**
+ * PRIMARY BUTTON (Neon Style)
+ * ==========================
+ */
+
+.primaryButton {
+  background: linear-gradient(45deg, #7c4dff, #ff5c8d);
+  border: none;
+  color: white;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px #7c4dff,
+              0 0 30px rgba(124, 77, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+/* glow pulse on hover */
+.primaryButton:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px #ff5c8d,
+              0 0 40px rgba(255, 92, 141, 0.8),
+              0 0 70px rgba(124, 77, 255, 0.8);
+}
+
+
+/**
+ * SECONDARY BUTTON (outline glass)
+ * ==========================
+ */
+
+.secondaryButton {
+  border: 2px solid rgba(255,255,255,0.6);
+  background: transparent;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.secondaryButton:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+
+/**
+ * MOBILE RESPONSIVE
+ * ==========================
+ */
+
+@media screen and (max-width: 996px) {
+
+  .heroBanner {
+    padding: 3rem 1.5rem;
+  }
+
+  .heroCard {
+    padding: 2rem;
+  }
+
+  .heroCard h1 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+}
